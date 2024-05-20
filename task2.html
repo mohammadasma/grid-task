@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            display: grid;
+            grid-template-columns: 100px 100px;
+            grid-template-rows: 50px 50px 50px 50px 50px;
+            /* text-align: center;
+             */
+            /* gap: 2px; */
+            justify-content: center;
+        }
+
+        .parent div {
+            border: 1px solid black;
+            text-align: center;
+            /* background-color: aqua; */
+
+
+        }
+
+        .box:hover {
+            background-color: red;
+            gap: 2px;
+
+        }
+
+        div:hover {
+            gap: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box" style=" grid-column: 1/3;">header</div>
+        <div class="box" style=" grid-column: 1/3;">nav</div>
+        <div class="box" style="grid-row:3;"> section</div>
+        <div class="box" style=" grid-row:4;">article</div>
+        <div class="box" style="grid-row:3/5;"> aside</div>
+
+        <div class="box" style="grid-column: 1/3;">footer</div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px;
+            background-color: black;
+            color: white;
+            justify-content: start;
+            padding: 2%;
+
+        }
+
+        @media screen and (min-width: 440px) and (max-width:800px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                /* float: none; */
+                /* width: 300%; */
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Responsive
+    </h1>
+    <div class="container">
+        <div>Home</div>
+        <div>News</div>
+        <div>Contact</div>
+        <div>About</div>
+    </div>
+
+</body>
+
+</html>
